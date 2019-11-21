@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3549427.svg)](https://doi.org/10.5281/zenodo.3549427)
+
+
 # Trove maps
 
 Jupyter notebooks to work with data from Trove's maps zone.
