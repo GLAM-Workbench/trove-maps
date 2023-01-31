@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3549427.svg)](https://doi.org/10.5281/zenodo.3549427)
+
+
 # Trove maps
 
 Current version: [v1.0.0](https://github.com/GLAM-Workbench/trove-maps/releases/tag/v1.0.0)
