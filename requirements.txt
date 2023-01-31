@@ -35,7 +35,9 @@ beautifulsoup4==4.11.1
 bleach==6.0.0
     # via nbconvert
 branca==0.6.0
-    # via ipyleaflet
+    # via
+    #   folium
+    #   ipyleaflet
 cattrs==22.2.0
     # via requests-cache
 certifi==2022.12.7
@@ -62,6 +64,8 @@ executing==1.2.0
     # via stack-data
 fastjsonschema==2.16.2
     # via nbformat
+folium==0.14.0
+    # via -r requirements.in
 idna==3.4
     # via
     #   anyio
@@ -98,6 +102,7 @@ jinja2==3.1.2
     # via
     #   altair
     #   branca
+    #   folium
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -191,6 +196,7 @@ notebook-shim==0.2.2
 numpy==1.24.1
     # via
     #   altair
+    #   folium
     #   pandas
 packaging==23.0
     # via
@@ -259,6 +265,7 @@ pyzmq==25.0.0
 requests==2.28.2
     # via
     #   -r requirements.in
+    #   folium
     #   jupyterlab-server
     #   requests-cache
 requests-cache==0.9.8
