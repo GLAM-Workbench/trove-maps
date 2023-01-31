@@ -7,3 +7,4 @@ flake8
 nbqa
 pre-commit
 jupyterlab-code-formatter
+frictionless
