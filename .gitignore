@@ -8,3 +8,4 @@ texts
 single_maps*
 *.sqlite
 *.log
+*.html

@@ -14,3 +14,4 @@ requests_cache
 lat_lon_parser
 vega_datasets
 ipyleaflet
+folium
