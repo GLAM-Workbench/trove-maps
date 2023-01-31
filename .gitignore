@@ -1,6 +1,10 @@
 .ipynb_checkpoints
 *.pyc
 .DS_Store
-Untitled.ipynb
+Untitled*
 data
 texts
+.env
+single_maps*
+*.sqlite
+*.log
