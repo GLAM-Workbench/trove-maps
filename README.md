@@ -4,7 +4,7 @@ Current version: [v1.0.0](https://github.com/GLAM-Workbench/trove-maps/releases/
 
 Jupyter notebooks to work with data from Trove's maps zone.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GLAM-Workbench/trove-maps/master?urlpath=lab/tree/index.ipynb)
+See the [Trove map section](https://glam-workbench.net/trove-maps/) of the GLAM Workbench for more details.
 
 ## Notebook topics
 
