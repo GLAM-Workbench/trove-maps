@@ -4,6 +4,8 @@
 #
 #    pip-compile dev-requirements.in
 #
+annotated-types==0.5.0
+    # via pydantic
 anyio==3.6.2
     # via
     #   -c requirements.txt
@@ -25,6 +27,7 @@ asttokens==2.2.1
 attrs==22.2.0
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jsonschema
     #   pytest
 babel==2.11.0
@@ -55,12 +58,18 @@ cffi==1.15.1
     #   argon2-cffi-bindings
 cfgv==3.3.1
     # via pre-commit
+chardet==5.1.0
+    # via frictionless
 charset-normalizer==3.0.1
     # via
     #   -c requirements.txt
     #   requests
 click==8.1.3
-    # via black
+    # via
+    #   black
+    #   typer
+colorama==0.4.6
+    # via typer
 comm==0.1.2
     # via
     #   -c requirements.txt
@@ -75,6 +84,7 @@ decorator==5.1.1
     # via
     #   -c requirements.txt
     #   ipython
+    #   validators
 defusedxml==0.7.1
     # via
     #   -c requirements.txt
@@ -101,6 +111,10 @@ filelock==3.9.0
     # via virtualenv
 flake8==6.0.0
     # via -r dev-requirements.in
+frictionless==5.15.10
+    # via -r dev-requirements.in
+humanize==4.7.0
+    # via frictionless
 identify==2.5.15
     # via pre-commit
 idna==3.4
@@ -137,6 +151,8 @@ ipython-genutils==0.2.0
     #   -c requirements.txt
     #   nbclassic
     #   notebook
+isodate==0.6.1
+    # via frictionless
 isort==5.11.4
     # via -r dev-requirements.in
 jedi==0.18.2
@@ -146,6 +162,7 @@ jedi==0.18.2
 jinja2==3.1.2
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -159,6 +176,7 @@ json5==0.9.11
 jsonschema==4.17.3
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyterlab-server
     #   nbformat
 jupyter-client==7.4.9
@@ -202,6 +220,10 @@ jupyterlab-server==2.19.0
     # via
     #   -c requirements.txt
     #   jupyterlab
+markdown-it-py==3.0.0
+    # via rich
+marko==2.0.0
+    # via frictionless
 markupsafe==2.1.2
     # via
     #   -c requirements.txt
@@ -214,6 +236,8 @@ matplotlib-inline==0.1.6
     #   ipython
 mccabe==0.7.0
     # via flake8
+mdurl==0.1.2
+    # via markdown-it-py
 mistune==2.0.4
     # via
     #   -c requirements.txt
@@ -284,6 +308,8 @@ parso==0.8.3
     #   jedi
 pathspec==0.11.0
     # via black
+petl==1.7.12
+    # via frictionless
 pexpect==4.8.0
     # via
     #   -c requirements.txt
@@ -335,6 +361,10 @@ pycparser==2.21
     # via
     #   -c requirements.txt
     #   cffi
+pydantic==2.0.3
+    # via frictionless
+pydantic-core==2.3.0
+    # via pydantic
 pyflakes==3.0.1
     # via flake8
 pygments==2.14.0
@@ -342,6 +372,7 @@ pygments==2.14.0
     #   -c requirements.txt
     #   ipython
     #   nbconvert
+    #   rich
 pyrsistent==0.19.3
     # via
     #   -c requirements.txt
@@ -353,13 +384,18 @@ pytest==7.2.1
 python-dateutil==2.8.2
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyter-client
+python-slugify==8.0.1
+    # via frictionless
 pytz==2022.7.1
     # via
     #   -c requirements.txt
     #   babel
 pyyaml==6.0
-    # via pre-commit
+    # via
+    #   frictionless
+    #   pre-commit
 pyzmq==25.0.0
     # via
     #   -c requirements.txt
@@ -368,21 +404,31 @@ pyzmq==25.0.0
     #   jupyter-server
     #   nbclassic
     #   notebook
-requests==2.28.2
+requests==2.31.0
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyterlab-server
+rfc3986==2.0.0
+    # via frictionless
+rich==13.4.2
+    # via typer
 send2trash==1.8.0
     # via
     #   -c requirements.txt
     #   jupyter-server
     #   nbclassic
     #   notebook
+shellingham==1.5.0.post1
+    # via typer
+simpleeval==0.9.13
+    # via frictionless
 six==1.16.0
     # via
     #   -c requirements.txt
     #   asttokens
     #   bleach
+    #   isodate
     #   python-dateutil
 sniffio==1.3.0
     # via
@@ -396,12 +442,18 @@ stack-data==0.6.2
     # via
     #   -c requirements.txt
     #   ipython
+stringcase==1.2.0
+    # via frictionless
+tabulate==0.9.0
+    # via frictionless
 terminado==0.17.1
     # via
     #   -c requirements.txt
     #   jupyter-server
     #   nbclassic
     #   notebook
+text-unidecode==1.3
+    # via python-slugify
 tinycss2==1.2.1
     # via
     #   -c requirements.txt
@@ -442,12 +494,23 @@ traitlets==5.8.1
     #   nbconvert
     #   nbformat
     #   notebook
-typing-extensions==4.4.0
-    # via black
+typer[all]==0.9.0
+    # via frictionless
+typing-extensions==4.7.1
+    # via
+    #   annotated-types
+    #   black
+    #   frictionless
+    #   pydantic
+    #   pydantic-core
+    #   rich
+    #   typer
 urllib3==1.26.14
     # via
     #   -c requirements.txt
     #   requests
+validators==0.20.0
+    # via frictionless
 virtualenv==20.17.1
     # via pre-commit
 wcwidth==0.2.6
