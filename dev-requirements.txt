@@ -18,6 +18,10 @@ argon2-cffi-bindings==21.2.0
     # via
     #   -c requirements.txt
     #   argon2-cffi
+arrow==1.2.3
+    # via
+    #   -c requirements.txt
+    #   isoduration
 asttokens==2.2.1
     # via
     #   -c requirements.txt
@@ -25,6 +29,7 @@ asttokens==2.2.1
 attrs==22.2.0
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jsonschema
     #   pytest
 babel==2.11.0
@@ -55,12 +60,18 @@ cffi==1.15.1
     #   argon2-cffi-bindings
 cfgv==3.3.1
     # via pre-commit
+chardet==5.2.0
+    # via frictionless
 charset-normalizer==3.0.1
     # via
     #   -c requirements.txt
     #   requests
 click==8.1.3
-    # via black
+    # via
+    #   black
+    #   typer
+colorama==0.4.6
+    # via typer
 comm==0.1.2
     # via
     #   -c requirements.txt
@@ -101,12 +112,21 @@ filelock==3.9.0
     # via virtualenv
 flake8==6.0.0
     # via -r dev-requirements.in
+fqdn==1.5.1
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+frictionless==5.15.6
+    # via -r dev-requirements.in
+humanize==4.8.0
+    # via frictionless
 identify==2.5.15
     # via pre-commit
 idna==3.4
     # via
     #   -c requirements.txt
     #   anyio
+    #   jsonschema
     #   requests
 importlib-metadata==6.0.0
     # via
@@ -137,6 +157,12 @@ ipython-genutils==0.2.0
     #   -c requirements.txt
     #   nbclassic
     #   notebook
+isodate==0.6.1
+    # via frictionless
+isoduration==20.11.0
+    # via
+    #   -c requirements.txt
+    #   jsonschema
 isort==5.11.4
     # via -r dev-requirements.in
 jedi==0.18.2
@@ -146,6 +172,7 @@ jedi==0.18.2
 jinja2==3.1.2
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -156,9 +183,15 @@ json5==0.9.11
     # via
     #   -c requirements.txt
     #   jupyterlab-server
-jsonschema==4.17.3
+jsonpointer==2.4
     # via
     #   -c requirements.txt
+    #   jsonschema
+jsonschema[format-nongpl]==4.17.3
+    # via
+    #   -c requirements.txt
+    #   frictionless
+    #   jupyter-events
     #   jupyterlab-server
     #   nbformat
 jupyter-client==7.4.9
@@ -181,13 +214,21 @@ jupyter-core==5.1.5
     #   nbconvert
     #   nbformat
     #   notebook
-jupyter-server==1.23.5
+jupyter-events==0.6.3
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
+jupyter-server==2.7.2
     # via
     #   -c requirements.txt
     #   jupyterlab
     #   jupyterlab-server
     #   nbclassic
     #   notebook-shim
+jupyter-server-terminals==0.4.4
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 jupyterlab==3.5.3
     # via
     #   -c requirements.txt
@@ -202,6 +243,10 @@ jupyterlab-server==2.19.0
     # via
     #   -c requirements.txt
     #   jupyterlab
+markdown-it-py==3.0.0
+    # via rich
+marko==2.0.0
+    # via frictionless
 markupsafe==2.1.2
     # via
     #   -c requirements.txt
@@ -214,6 +259,8 @@ matplotlib-inline==0.1.6
     #   ipython
 mccabe==0.7.0
     # via flake8
+mdurl==0.1.2
+    # via markdown-it-py
 mistune==2.0.4
     # via
     #   -c requirements.txt
@@ -265,6 +312,10 @@ notebook-shim==0.2.2
     # via
     #   -c requirements.txt
     #   nbclassic
+overrides==7.4.0
+    # via
+    #   -c requirements.txt
+    #   jupyter-server
 packaging==23.0
     # via
     #   -c requirements.txt
@@ -284,6 +335,8 @@ parso==0.8.3
     #   jedi
 pathspec==0.11.0
     # via black
+petl==1.7.14
+    # via frictionless
 pexpect==4.8.0
     # via
     #   -c requirements.txt
@@ -342,6 +395,7 @@ pygments==2.14.0
     #   -c requirements.txt
     #   ipython
     #   nbconvert
+    #   rich
 pyrsistent==0.19.3
     # via
     #   -c requirements.txt
@@ -353,13 +407,25 @@ pytest==7.2.1
 python-dateutil==2.8.2
     # via
     #   -c requirements.txt
+    #   arrow
+    #   frictionless
     #   jupyter-client
+python-json-logger==2.0.7
+    # via
+    #   -c requirements.txt
+    #   jupyter-events
+python-slugify==8.0.1
+    # via frictionless
 pytz==2022.7.1
     # via
     #   -c requirements.txt
     #   babel
-pyyaml==6.0
-    # via pre-commit
+pyyaml==6.0.1
+    # via
+    #   -c requirements.txt
+    #   frictionless
+    #   jupyter-events
+    #   pre-commit
 pyzmq==25.0.0
     # via
     #   -c requirements.txt
@@ -371,19 +437,40 @@ pyzmq==25.0.0
 requests==2.28.2
     # via
     #   -c requirements.txt
+    #   frictionless
     #   jupyterlab-server
-send2trash==1.8.0
+rfc3339-validator==0.1.4
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+    #   jupyter-events
+rfc3986==2.0.0
+    # via frictionless
+rfc3986-validator==0.1.1
+    # via
+    #   -c requirements.txt
+    #   jsonschema
+    #   jupyter-events
+rich==13.5.2
+    # via typer
+send2trash==1.8.2
     # via
     #   -c requirements.txt
     #   jupyter-server
     #   nbclassic
     #   notebook
+shellingham==1.5.3
+    # via typer
+simpleeval==0.9.13
+    # via frictionless
 six==1.16.0
     # via
     #   -c requirements.txt
     #   asttokens
     #   bleach
+    #   isodate
     #   python-dateutil
+    #   rfc3339-validator
 sniffio==1.3.0
     # via
     #   -c requirements.txt
@@ -396,12 +483,19 @@ stack-data==0.6.2
     # via
     #   -c requirements.txt
     #   ipython
+stringcase==1.2.0
+    # via frictionless
+tabulate==0.9.0
+    # via frictionless
 terminado==0.17.1
     # via
     #   -c requirements.txt
     #   jupyter-server
+    #   jupyter-server-terminals
     #   nbclassic
     #   notebook
+text-unidecode==1.3
+    # via python-slugify
 tinycss2==1.2.1
     # via
     #   -c requirements.txt
@@ -435,6 +529,7 @@ traitlets==5.8.1
     #   ipython
     #   jupyter-client
     #   jupyter-core
+    #   jupyter-events
     #   jupyter-server
     #   matplotlib-inline
     #   nbclassic
@@ -442,18 +537,34 @@ traitlets==5.8.1
     #   nbconvert
     #   nbformat
     #   notebook
+typer[all]==0.9.0
+    # via frictionless
 typing-extensions==4.4.0
-    # via black
+    # via
+    #   black
+    #   frictionless
+    #   rich
+    #   typer
+uri-template==1.3.0
+    # via
+    #   -c requirements.txt
+    #   jsonschema
 urllib3==1.26.14
     # via
     #   -c requirements.txt
     #   requests
+validators==0.21.2
+    # via frictionless
 virtualenv==20.17.1
     # via pre-commit
 wcwidth==0.2.6
     # via
     #   -c requirements.txt
     #   prompt-toolkit
+webcolors==1.13
+    # via
+    #   -c requirements.txt
+    #   jsonschema
 webencodings==0.5.1
     # via
     #   -c requirements.txt
