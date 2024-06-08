@@ -5,7 +5,7 @@
   "related_identifiers": [
     {
       "scheme": "url",
-      "identifier": "https://github.com/trove-maps/tree/v1.0.0",
+      "identifier": "https://github.com/trove-maps/tree/v2.0.0",
       "relation": "isDerivedFrom",
       "resource_type": "software"
     },
@@ -22,14 +22,14 @@
       "resource_type": "other"
     }
   ],
-  "version": "v1.0.0",
+  "version": "v2.0.0",
   "upload_type": "software",
   "keywords": [
     "digital humanities",
     "Jupyter",
     "GLAM Workbench"
   ],
-  "publication_date": "2023-01-31",
+  "publication_date": "2024-06-08",
   "creators": [
     {
       "name": "Sherratt, Tim",
@@ -37,5 +37,5 @@
     }
   ],
   "access_right": "open",
-  "description": "<p>Current version: <a href=\"https://github.com/GLAM-Workbench/trove-maps/releases/tag/v1.0.0\">v1.0.0</a></p> <p>Jupyter notebooks to work with data from Trove’s maps zone.</p> <p>See the <a href='https://glam-workbench.net/trove-maps/'>Trove map section</a> of the GLAM Workbench for more details.</p> <h2 id=\"notebook-topics\">Notebook topics</h2> <ul> <li><p>Exploring digitised maps in Trove – quantify volume of digitised maps by harvesting and analysing the metadata.</p></li> <li><p>Parse map coordinates from metadata – parse coordinate strings from the metadata and convert the values to decimals.</p></li> </ul> <h2 id=\"cite-as\">Cite as</h2> <p>See the GLAM Workbench or <a href=\"https://doi.org/10.5281/zenodo.3549426\">Zenodo</a> for up-to-date citation details.</p> <hr /> <p>This repository is part of the <a href=\"https://glam-workbench.net/\">GLAM Workbench</a>.</p>"
+  "description": "<p>Maps are found in Trove’s ‘Images, Maps &amp; Artefacts’ category. This includes single maps, as well as map series, atlases, and aerial photographs. You can access metadata about maps through the Trove API.</p> <p>For more information and documentation see the <a href=\"https://glam-workbench.net/trove-maps\">Trove maps</a> section of the <a href=\"https://glam-workbench.net\">GLAM Workbench</a>.</p> <h2 id=\"notebooks\">Notebooks</h2> <ul> <li>Create a subset of digitised maps by searching for coordinates</li> <li>Parse map coordinates from metadata</li> <li>Exploring digitised maps in Trove</li> </ul> <h2 id=\"associated-datasets\">Associated datasets</h2> <ul> <li><a href=\"https://github.com/GLAM-Workbench/trove-maps-data\">trove-maps-data</a></li> </ul> <hr /> <p>Created by <a href=\"https://timsherratt.au\">Tim Sherratt</a> for the <a href=\"https://glam-workbench.net\">GLAM Workbench</a></p>"
 }

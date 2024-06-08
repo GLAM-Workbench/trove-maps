@@ -9,3 +9,7 @@ single_maps*
 *.sqlite
 *.log
 *.html
+*.geojson
+*.csv
+draft*.ipynb
+*.ndjson
