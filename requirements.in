@@ -4,8 +4,6 @@ altair
 python-dotenv
 jupyterlab
 jupyter-archive
-# To deal with https://github.com/jupyter-server/jupyter_server/issues/1038
-jupyter-server<2.0.0
 tqdm
 beautifulsoup4
 lxml
@@ -15,3 +13,9 @@ lat_lon_parser
 vega_datasets
 ipyleaflet
 folium
+geopandas
+jupyterlab-geojson
+folium
+matplotlib
+mapclassify
+buckaroo
