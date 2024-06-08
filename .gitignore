@@ -13,3 +13,4 @@ single_maps*
 *.csv
 draft*.ipynb
 *.ndjson
+http-cache*
