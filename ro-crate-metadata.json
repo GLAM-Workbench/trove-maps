@@ -150,7 +150,7 @@
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
             },
-            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/None/create-map-subsets.ipynb",
+            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/master/create-map-subsets.ipynb",
             "workExample": []
         },
         {
@@ -188,7 +188,7 @@
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
             },
-            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/None/parse_coordinates.ipynb",
+            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/master/parse_coordinates.ipynb",
             "workExample": []
         },
         {
@@ -204,6 +204,12 @@
             "sdDatePublished": "2024-06-08",
             "size": 34843,
             "url": "https://github.com/GLAM-Workbench/trove-maps-data/blob/main/single_maps.csv"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-maps/trove-map-clusters.html",
+            "@type": "CreativeWork",
+            "name": "Locations of Trove digitised maps",
+            "url": "https://glam-workbench.net/trove-maps/trove-map-clusters.html"
         },
         {
             "@id": "https://glam-workbench.net/trove-maps/single-maps-coordinates-data/",
@@ -223,7 +229,11 @@
             },
             "name": "trove-maps-data",
             "url": "https://github.com/GLAM-Workbench/trove-maps-data",
-            "workExample": []
+            "workExample": [
+                {
+                    "@id": "https://glam-workbench.net/trove-maps/trove-map-clusters.html"
+                }
+            ]
         },
         {
             "@id": "https://github.com/GLAM-Workbench/trove-maps-data/blob/main/single_maps_coordinates.csv",
@@ -299,7 +309,7 @@
             "programmingLanguage": {
                 "@id": "https://www.python.org/downloads/release/python-31012/"
             },
-            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/None/Exploring-digitised-maps.ipynb",
+            "url": "https://github.com/GLAM-Workbench/trove-maps/blob/master/Exploring-digitised-maps.ipynb",
             "workExample": []
         },
         {
